@@ -10,10 +10,12 @@ app.listen(port, ()=> {
     console.log(`listening on port ${port}`);
 })
 
+// this is home route
 app.get("/", (req,res)=> {
     res.render("home.ejs")
 })
 
+// this is login route
 app.get("/login", (req,res)=> {
     res.send("This is login page");
 })
